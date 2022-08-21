@@ -2,6 +2,7 @@ import express, { Request, Response, NextFunction } from "express";
 import "dotenv/config"; 
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
+import bestsellersRoutes from './routes/bestsellers'; 
 
 const app = express(); 
 
@@ -16,6 +17,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 // routes 
+app.use('/api', bestsellersRoutes); 
 
 app.get('/', (req: Request, res: Response) => {
   res.send('express/ts app is working')
