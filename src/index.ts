@@ -3,10 +3,19 @@ import "dotenv/config";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import bestsellersRoutes from './routes/bestsellers'; 
+import cors from 'cors';
 
 const app = express(); 
 
 // middleware 
+const allowedOrigins = ['http://localhost:3000'];
+
+const options: cors.CorsOptions = {
+  origin: allowedOrigins
+};
+
+app.use(cors(options));
+
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   res.status(500).json({message: err.message}); 
 })
