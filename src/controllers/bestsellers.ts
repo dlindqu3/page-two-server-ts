@@ -48,8 +48,8 @@ export const getBestsellersByCategory: RequestHandler = async(req, res, next) =>
     await axios.get(url)
       .then(response => {
         const items = response.data as listByCategory; 
-        let firstBook = items.results.books[0].title
-        res.status(200).send({ firstBookTitle: firstBook, bestsellerItems: items})
+        // let firstBook = items.results.books[0].title
+        res.status(200).send(items)
       })
   } catch (error){
     res.status(500).send({error})
