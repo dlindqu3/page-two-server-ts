@@ -33,8 +33,8 @@ export const getBestsellerLists: RequestHandler = async (req, res, next) => {
     await axios.get(baseUrl + nytKey)
       .then(response => {
         const lists = response.data as listsResponse; 
-        const firstListName = lists.results[0].list_name_encoded
-        res.status(200).send({ firstList: firstListName, AllLists: lists })
+        // const firstListName = lists.results[0].list_name_encoded
+        res.status(200).send(lists)
       })
   } catch (error){
     res.status(500).send({error})
