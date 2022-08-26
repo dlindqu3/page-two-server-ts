@@ -8,7 +8,7 @@ import cors from 'cors';
 const app = express(); 
 
 // middleware 
-const allowedOrigins = ['http://localhost:3000'];
+const allowedOrigins = ['http://localhost:3000', 'https://page-two-mern-ts.netlify.app'];
 
 const options: cors.CorsOptions = {
   origin: allowedOrigins
