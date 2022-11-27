@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "prestart": "npm run build",
-    "start": "node src/index.js"
+    "build": "npm install && tsc",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
