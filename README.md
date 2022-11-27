@@ -15,5 +15,7 @@ NYT API Key as apiKey
 mongoDB connection uri as MONGO_URI
 PORT as 3000
 
+##
+
 ## Citations 
 - I used the CORS setup as discussed by Mia Adjei in her article "Add CORS Support to Your Express + TypeScript API" [link](https://www.twilio.com/blog/add-cors-support-express-typescript-api)
