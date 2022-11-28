@@ -20,3 +20,6 @@ PORT as 3000
 
 ## Citations 
 - I used the CORS setup as discussed by Mia Adjei in her article "Add CORS Support to Your Express + TypeScript API" [link](https://www.twilio.com/blog/add-cors-support-express-typescript-api)
+-  Bjorn Krols, "Deploying a TypeScript Express application to Render", [link](https://technotrampoline.com/articles/deploying-a-typescript-express-application-to-render/)
+- "Typescript support?", [link](https://community.render.com/t/typescript-support/377)
+- "Deploy express + typescript as Render web service", [link](https://community.render.com/t/deploy-express-typescript-as-render-web-service/7374)
